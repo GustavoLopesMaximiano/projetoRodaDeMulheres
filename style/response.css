@@ -1,0 +1,148 @@
+/* Garantir que o box-sizing seja aplicado globalmente */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ajustes para tornar o site responsivo */
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .cabecario .logo img {
+        width: 250px;
+    }
+
+    .cabecario ul {
+        gap: 20px;
+    }
+
+    .cabecario ul li {
+        font-size: 16px;
+    }
+
+    .main1 {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+        width: 100%; /* Garante que a largura seja 100% */
+        max-width: 100%; /* Garante que a largura máxima seja 100% */
+        overflow: hidden; /* Garante que o conteúdo não vaze */
+    }
+
+    .main1 .logoRedonda img {
+        width: 200px;
+    }
+
+    .main1 .titulo h1 {
+        font-size: 30px;
+    }
+
+    .main1 .titulo h2 {
+        font-size: 20px;
+    }
+
+    .mainmeio {
+        max-width: 100%; /* Garante que a largura máxima seja 100% */
+        padding: 20px;
+        overflow: hidden; /* Garante que o conteúdo não vaze */
+    }
+
+    .mainmeio h1 {
+        font-size: 1.8rem;
+    }
+
+    .mainmeio p {
+        font-size: 1.2rem;
+    }
+
+    .main2 {
+        width: 100%; /* Garante que a largura seja 100% */
+        max-width: 600px;
+        padding: 0 15px; /* Ajusta o padding para evitar que o conteúdo vaze */
+        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+    }
+
+    .main2 .online, .main2 .horario {
+        width: 100%; /* Garante que as divs dentro da main2 não vazem */
+        font-size: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        width: 100%; /* Garante que o footer não ultrapasse a tela */
+        box-sizing: border-box; /* Previne o vazamento do footer */
+        overflow: hidden; /* Garante que o footer não vaze */
+    }
+
+    footer .info {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecario nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecario ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cabecario .logo img {
+        width: 200px;
+    }
+
+    .main1 .titulo h1 {
+        font-size: 24px;
+    }
+
+    .main1 .titulo h2 {
+        font-size: 18px;
+    }
+
+    .mainmeio {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .mainmeio h1 {
+        font-size: 1.5rem;
+    }
+
+    .mainmeio p {
+        font-size: 1rem;
+    }
+
+    .main2 {
+        padding: 15px;
+        width: 100%; /* Garante que a largura seja 100% */
+        max-width: 100%;
+        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+    }
+
+    .main2 .online, .main2 .horario {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
