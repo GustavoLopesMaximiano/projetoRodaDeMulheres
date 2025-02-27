@@ -11,7 +11,10 @@
     header {
         padding: 15px 30px;
     }
-
+    .tudo {
+        background-color: rgb(255, 255, 255);  
+        box-shadow: none;  
+    }
     .cabecario .logo img {
         width: 250px;
     }
@@ -49,6 +52,8 @@
         max-width: 100%; /* Garante que a largura máxima seja 100% */
         padding: 20px;
         overflow: hidden; /* Garante que o conteúdo não vaze */
+        background-color: #f3f2ed;
+        color: #252420;
     }
 
     .mainmeio h1 {
