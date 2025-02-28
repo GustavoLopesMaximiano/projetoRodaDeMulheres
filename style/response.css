@@ -151,3 +151,44 @@
         padding: 20px;
     }
 }
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+    fieldset {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+        padding: 10px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    fieldset {
+        padding: 5px;
+    }
+}
