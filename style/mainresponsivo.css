@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .logo a {
+        font-size: 1.5rem;
+        color: #46413d;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main .pageOne {
+        padding: 2rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    main .pageOne .leftContent {
+        padding: 2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    main .pageOne .leftContent .title h1 {
+        font-size: 3rem;
+    }
+
+    main .pageOne .leftContent .title h2 {
+        font-size: 1.5rem;
+    }
+
+    main .pageOne .leftContent .title h3 {
+        font-size: 1.2rem;
+    }
+
+    main .pageOne .leftContent .paragraph {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    main .pageTwo {
+        padding: 2rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    main .pageTwo .rightContent {
+        padding: 2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    main .pageTwo .rightContent .title h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    main .pageTwo .rightContent .lista ul li {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    main .pageThree {
+        padding: 2rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    main .pageThree .left {
+        padding: 2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    main .pageThree .left .text h1 {
+        font-size: 2.5rem;
+    }
+
+    main .pageThree .left .text p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    main .pageThree .left .boxes {
+        width: 100%;
+    }
+
+    main .pageThree .left .online,
+    main .pageThree .left .horario {
+        width: 100%;
+    }
+
+    .pageFour {
+        padding: 2rem;
+    }
+
+    .pageFour .people {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pageFour .people .ester,
+    .pageFour .people .marcia {
+        width: 100%;
+    }
+
+    .pageFour .people img {
+        max-width: 200px;
+        height: auto;
+    }
+}
