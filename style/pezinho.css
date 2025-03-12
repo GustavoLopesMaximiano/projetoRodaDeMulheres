@@ -1,10 +1,24 @@
 footer{
     display: flex;
-    justify-content: space-around;
     padding: 50px;
     background-color: #292e31;
+    gap: 25px;
+    justify-content: space-around;
 }
-footer a{
+.info1, .info2, .info3 {
+    display: flex;
+    flex: 1;
+}
+.info1 {
+    justify-content: baseline;
+}
+.info2 {
+    justify-content: center;
+}
+.info3 {
+    justify-content: end;
+}
+footer a, footer p{
     color: #f3f2ed;
     text-decoration: none;
 }
