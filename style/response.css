@@ -1,196 +1,377 @@
-/* Garantir que o box-sizing seja aplicado globalmente */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Ajustes para tornar o site responsivo */
-
-@media screen and (max-width: 1024px) {
-    header {
-        padding: 15px 30px;
+@media (max-width: 1024px) {
+    main .pageOne {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 5%;
     }
-    .tudo {
-        background-color: rgb(255, 255, 255);
-        box-shadow: none;
+  
+    main .pageOne .leftContent {
+      height: auto;
+      padding: 5% 5%;
+      text-align: center;
     }
-    .cabecario .logo img {
-        width: 250px;
+  
+    main .pageOne .leftContent .paragraph {
+      width: 100%;
+      margin-top: 1rem;
     }
-
-    .cabecario ul {
-        gap: 20px;
+  
+    main .pageOne .leftContent .title h1 {
+      font-size: 4rem;
     }
-
-    .cabecario ul li {
-        font-size: 16px;
+  
+    main .pageOne .leftContent .title h2,
+    main .pageOne .leftContent .title h3 {
+      font-size: 1.5rem;
     }
-
-    .main1 {
-        flex-direction: column;
-        text-align: center;
-        margin-right: 0;
-        width: 100%; /* Garante que a largura seja 100% */
-        max-width: 100%; /* Garante que a largura máxima seja 100% */
-        overflow: hidden; /* Garante que o conteúdo não vaze */
+  
+    main .pageOne .leftContent .mainButton {
+      display: flex;
+      justify-content: center;
     }
-
-    .main1 .logoRedonda img {
-        width: 200px;
+  
+    .pageOne .rightContent {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
-
-    .main1 .titulo h1 {
-        font-size: 30px;
+  
+    .pageOne .rightContent img {
+      max-width: 80%;
+      height: auto;
     }
-
-    .main1 .titulo h2 {
-        font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main .pageOne .leftContent {
+      padding: 10% 5%;
     }
-
-    .mainmeio {
-        max-width: 100%; /* Garante que a largura máxima seja 100% */
-        padding: 20px;
-        overflow: hidden; /* Garante que o conteúdo não vaze */
-        background-color: #f3f2ed;
-        color: #252420;
-        margin-top: 20px;
+  
+    main .pageOne .leftContent .title h1 {
+      font-size: 3rem;
     }
-
-    .mainmeio h1 {
-        font-size: 1.8rem;
+  
+    main .pageOne .leftContent .title h2,
+    main .pageOne .leftContent .title h3 {
+      font-size: 1.2rem;
     }
-
-    .mainmeio p {
-        font-size: 1.2rem;
+  
+    main .pageOne .leftContent .paragraph p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
     }
-
-    .main2 {
-        width: 100%; /* Garante que a largura seja 100% */
-        max-width: 600px;
-        padding: 0 15px; /* Ajusta o padding para evitar que o conteúdo vaze */
-        margin: 0;
-        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+  
+    main .pageOne .leftContent .mainButton a {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 2rem;
     }
-
-    .main2 .online, .main2 .horario {
-        width: 100%; /* Garante que as divs dentro da main2 não vazem */
-        font-size: 20px;
-        text-align: center;
-        flex-wrap: wrap;
-        padding: 15px;
-        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+  
+    .pageOne .rightContent img {
+      max-width: 100%;
     }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 30px;
-        width: 100%; /* Garante que o footer não ultrapasse a tela */
-        box-sizing: border-box; /* Previne o vazamento do footer */
-        overflow: hidden; /* Garante que o footer não vaze */
+  }
+  
+  @media (max-width: 480px) {
+    main .pageOne {
+      padding: 10%;
     }
-
-    footer .info {
-        margin-bottom: 15px;
+  
+    main .pageOne .leftContent .title h1 {
+      font-size: 2.5rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .cabecario nav {
-        flex-direction: column;
-        align-items: center;
+  
+    main .pageOne .leftContent .title h2,
+    main .pageOne .leftContent .title h3 {
+      font-size: 1rem;
     }
-
-    .cabecario ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+  
+    main .pageOne .leftContent .paragraph p {
+      font-size: 1rem;
+      line-height: 1.4rem;
     }
-
-    .cabecario .logo img {
-        width: 200px;
+  
+    main .pageOne .leftContent .mainButton a {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
     }
-
-    .main1 .titulo h1 {
-        font-size: 24px;
+  
+    .pageOne .rightContent img {
+      max-width: 100%;
+      height: auto;
     }
-
-    .main1 .titulo h2 {
-        font-size: 18px;
+  }
+  @media (max-width: 1024px) {
+    main .pageTwo {
+      flex-direction: column;
+      align-items: center;
+      min-height: auto;
+      padding: 5%;
     }
-
-    .mainmeio {
-        max-width: 100%;
-        padding: 15px;
+  
+    /* Esconde a imagem em telas menores */
+    main .pageTwo .leftContent {
+      display: none;
     }
-
-    .mainmeio h1 {
-        font-size: 1.5rem;
+  
+    main .pageTwo .rightContent {
+      height: auto;
+      padding: 5% 5%;
+      text-align: center;
+      width: 100%;
     }
-
-    .mainmeio p {
-        font-size: 1rem;
+  
+    main .pageTwo .rightContent .title h1 {
+      font-size: 2.5rem;
     }
-
-    .main2 {
-        padding: 15px;
-        width: 100%; /* Garante que a largura seja 100% */
-        max-width: 100%;
-        box-sizing: border-box; /* Previne que o padding adicione à largura total */
+  
+    main .pageTwo .rightContent .lista ul {
+      padding: 0;
     }
-
-    .main2 .online, .main2 .horario {
-        font-size: 18px;
-        padding: 10px;
-        width: 100%;
-        flex-wrap: wrap;
-        text-align: center;
+  
+    main .pageTwo .rightContent .lista ul li {
+      font-size: 1.5rem;
+      margin-top: 2rem;
     }
-
-    footer {
-        padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main .pageTwo .rightContent {
+      padding: 10% 5%;
     }
-}
-@media (max-width: 768px) {
-    form {
-        width: 90%;
-        padding: 15px;
+  
+    main .pageTwo .rightContent .title h1 {
+      font-size: 2rem;
     }
-    label {
-        font-size: 14px;
+  
+    main .pageTwo .rightContent .lista ul li {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
     }
-    input[type="text"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="number"],
-    button {
-        font-size: 14px;
-        padding: 12px;
+  }
+  
+  @media (max-width: 480px) {
+    main .pageTwo {
+      padding: 10%;
     }
-    fieldset {
-        padding: 8px;
+  
+    main .pageTwo .rightContent .title h1 {
+      font-size: 1.8rem;
     }
-}
-
-@media (max-width: 480px) {
-    form {
-        width: 95%;
-        padding: 10px;
+  
+    main .pageTwo .rightContent .lista ul li {
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
-    label {
-        font-size: 14px;
+  }
+  @media (max-width: 1024px) {
+    main .pageThree {
+      flex-direction: column;
+      align-items: center;
+      min-height: auto;
+      padding: 8% 5%;
     }
-    input[type="text"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="number"],
-    button {
-        font-size: 14px;
-        padding: 10px;
+  
+    /* Esconde a imagem em telas menores */
+    main .pageThree .right {
+      display: none;
     }
-    fieldset {
-        padding: 5px;
+  
+    main .pageThree .left {
+      height: auto;
+      padding: 5%;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
-}
+  
+    main .pageThree .left .text {
+      gap: 2rem;
+    }
+  
+    main .pageThree .left .text h1 {
+      font-size: 3rem;
+    }
+  
+    main .pageThree .left .text p {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  
+    main .pageThree .left .boxes {
+      align-items: center;
+      gap: 2.5rem;
+    }
+  
+    main .pageThree .left .online,
+    main .pageThree .left .horario {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main .pageThree {
+      padding: 10%;
+    }
+  
+    main .pageThree .left {
+      gap: 2.5rem;
+    }
+  
+    main .pageThree .left .text h1 {
+      font-size: 2.5rem;
+    }
+  
+    main .pageThree .left .text p {
+      font-size: 1.3rem;
+    }
+  
+    main .pageThree .left .boxes {
+      gap: 2rem;
+    }
+  
+    main .pageThree .left .online,
+    main .pageThree .left .horario {
+      padding: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main .pageThree {
+      padding: 12%;
+    }
+  
+    main .pageThree .left {
+      gap: 2rem;
+    }
+  
+    main .pageThree .left .text h1 {
+      font-size: 2rem;
+    }
+  
+    main .pageThree .left .text p {
+      font-size: 1.2rem;
+    }
+  
+    main .pageThree .left .boxes {
+      gap: 1.5rem;
+    }
+  
+    main .pageThree .left .online,
+    main .pageThree .left .horario {
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  @media (max-width: 1024px) {
+    main .pageFour {
+      height: auto;
+      padding: 6% 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem; /* Reduzi o espaçamento geral */
+    }
+  
+    main .pageFour h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem; /* Reduzi a margem inferior do título */
+    }
+  
+    main .pageFour .people {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem; /* Reduzi o espaçamento entre os blocos */
+    }
+    .marcia, .ester {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      margin-top: 0;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem; /* Reduzi a margem inferior */
+    }
+  
+    .marcia p, .ester p {
+      width: 85%;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+  
+    .pageFour .people img {
+      max-height: 25vh;
+      width: auto;
+      margin-bottom: 1.5rem; /* Ajustei para reduzir a distância */
+      margin-top: 1.5rem; /* Mantive igual ao de baixo para equilíbrio */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main .pageFour {
+      padding: 8%;
+      gap: 1.2rem;
+    }
+  
+    main .pageFour h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.8rem; /* Diminui ainda mais a distância do título */
+    }
+  
+    .marcia, .ester {
+      gap: 1rem;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem; /* Reduzi a margem inferior */
+    }
+  
+    .marcia p, .ester p {
+      width: 90%;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  
+    .pageFour .people img {
+      max-height: 18vh;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main .pageFour {
+      padding: 10%;
+      gap: 1rem;
+    }
+  
+    main .pageFour h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem; /* Quase colado ao conteúdo */
+    }
+  
+    .marcia, .ester {
+      gap: 0.8rem;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+    }
+  
+    .marcia p, .ester p {
+      font-size: 1.1rem;
+      width: 95%;
+      line-height: 1.4rem;
+    }
+  
+    .pageFour .people img {
+      max-height: 15vh;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
