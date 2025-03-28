@@ -32,7 +32,7 @@ header nav {
 .cabecario ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    
 }
 
 .cabecario ul li a.oEscolhido {
@@ -98,4 +98,42 @@ header nav {
     .cabecario ul li {
         font-size: 16px;
     }
+}
+
+header {
+    background-color: #cad0c4 !important;
+    padding: 15px 5% !important;
+}
+
+.cabecario .logo img {
+    width: 250px !important;
+    max-width: 100%;
+}
+
+.cabecario ul {
+    display: flex !important;
+    gap: 40px !important;
+    list-style: none !important;
+}
+
+.cabecario ul li {
+    font-size: 20px !important;
+    transition: transform 0.2s ease;
+}
+
+.cabecario ul li a {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+.cabecario ul li a.oEscolhido {
+    color: #757676 !important;
+}
+
+.cabecario ul li:hover {
+    transform: scale(1.1);
+}
+
+.cabecario ul li a:hover {
+    color: #9b9c9c !important;
 }
